@@ -1,6 +1,3 @@
-/*
-I use std::chrono::steady_clock::time_point to compute time elapse.
-*/
 #include <iostream>
 #include <chrono>
 using namespace std;
@@ -31,9 +28,8 @@ int main()
   steady_clock::duration time_span = clock_end - clock_begin;
 
   double nseconds = double(time_span.count()) * steady_clock::period::num / steady_clock::period::den;
-  cout<<"fac of "<<n<<" is "<<fibn<<"."<<endl;
+  cout<<"fib of "<<n<<" is "<<fibn<<"."<<endl;
   cout << "It took me " << nseconds << " seconds.";
   cout << endl;
   return 0;
-	return 0;
 }
