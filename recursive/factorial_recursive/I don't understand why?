@@ -1,0 +1,43 @@
+I don't understand why the time elapse of this program takes too short. 
+I place the program in Github named "factorial_recursive ex1.cpp" which is in the following link.
+The link:
+https://github.com/40843245/CPP_code/blob/main/recursive/factorial_recursive/factorial_recursive%20ex1.cpp
+
+My problems are
+1. Does it take too long to perform recursive function?
+ Does it take too long to compute factorial of 15 using recursive function, doesn't it?
+ 
+ 2. Why the returned value are NOT same in different code (with same code)?
+ In cpp.sh the returned value of factorial_recursive(15) (i.e. 15!) is 2004310016 
+ BUT in idoene the returned value of factorial_recursive(15) (i.e. 15!) is 1307674368000 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Case 1:
+ I run the program in cpp.sh online IDE (provided by CPlusPlus)
+ I use std::chrono::steady_clock::time_point to compute time elapsed.
+ I use the long type to store the return value of the function.
+ 
+ I run this code on 2022/12/23 20:27 p.m.
+ 
+ -------------------------------------------------------
+ BUT the result is
+ fac of 15 is 2004310016.
+ It took me 0 seconds.
+ 
+ Which means it took me less than 1 second.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Case 2:
+
+ I run the program in ideone online IDE (provided by ideone) and I select compiler C++14.
+ I use std::chrono::steady_clock::time_point to compute time elapsed.
+ I use the long type to store the return value of the function.
+ 
+ I run this code on 2022/12/23 20:27 p.m.
+ 
+ -------------------------------------------------------
+  BUT the result is
+fac of 15 is 1307674368000.
+It took me 1.83e-07 seconds.
+
+ 
